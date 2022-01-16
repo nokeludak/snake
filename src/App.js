@@ -1,13 +1,12 @@
 import './App.css';
-import Board from "./components/Board"
 
 
-function App() {
-  return (
-    <div className="App">
-  <Board />
-    </div>
-  );
-}
+
+import React from 'react';
+
+import './App.css';
+import SnakeGame from './components/SnakeGame';
+
+const App = () => <SnakeGame />
 
 export default App;
