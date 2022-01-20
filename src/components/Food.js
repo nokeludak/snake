@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
-const Food = ({ dot }) => {
-  const style = {
-    left: `${dot[0]}%`,
-    top: `${dot[1]}%`,
-  };
-
-  return <div className="snake-food" style={style}></div>;
-};
-
+const Food = ({ food }) => {
+    const style = {
+        left: `${food[0]}%`,            //X coordinate of food
+        top: `${food[1]}%`              //Y coordinate of food
+    }
+    return (
+        <div className='food' style={style}></div>
+    );
+}
 export default Food;
