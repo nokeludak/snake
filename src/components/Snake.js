@@ -5,8 +5,8 @@ const Snake = ({snake}) => {
         <div>
             {snake.map((dot, i) => {
                 const style = {
-                    left: `${dot[0]}%`,                 //X coordinate of snake
-                    top: `${dot[1]}%`                   //Y coordinate of snake
+                    left: `${dot[0]}%`,              
+                    top: `${dot[1]}%`               
                 }
                 return (
                     <div className='snake' key={i} style={style}></div>
